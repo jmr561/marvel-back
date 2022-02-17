@@ -101,7 +101,7 @@ app.get("/character/appearances/comics/:id", async (req, res) => {
 });
 
 app.all("*", function (req, res) {
-  res.json({ message: "Page not found" });
+  res.json({ message: "Page not found!" });
 });
 
 app.listen(process.env.PORT, () => {
